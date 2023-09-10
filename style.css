@@ -1,0 +1,49 @@
+body {
+  margin: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tab-ui {
+  background: #efefef;
+}
+
+.tab-ui .btn-group {
+  display: flex;
+}
+
+.tab-ui .btn-group a {
+  padding: 8px;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-right-style: none;
+  text-align: center;
+  text-transform: uppercase;
+  background: #999;
+  color: #fff;
+}
+.tab-ui .btn-group a.active { 
+  background: #fff;
+  color: #333;
+}
+
+
+.tab-ui .btn-group a:last-child { border-right-style: solid; }
+
+.tab-ui .tab-contents .tab-content {
+  display: none;
+  padding: 2rem 1rem;
+}
+
+.tab-ui .tab-contents .tab-content.active {
+  display: block;
+}
